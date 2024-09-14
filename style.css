@@ -416,6 +416,14 @@ main {
   overflow: hidden;
 }
 
+.introimg {
+  object-fit: cover;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+
+}
+
 .aboutme {
   display: inline-flex;
   width: 100%;
@@ -467,139 +475,159 @@ pre {
 }
 
 #MySite {
- 
+
   height: 25%;
   width: 100%;
 }
-#MySite pre{
+
+#MySite pre {
   text-align: center;
 }
-.mysitetop{
+
+.mysitetop {
   position: relative;
   display: flex;
   height: 270px;
 }
 
-.colors{
+.colors {
   position: absolute;
   top: 20px;
   left: 41%;
- 
+
   display: initial;
   text-align: center;
 
 }
-.color{
+
+.color {
 
   margin: 10px;
   text-align: center;
-  
+
 }
 
 span.red {
-  font-size:35px;
+  font-size: 35px;
   color: rgb(141, 47, 47);
   background-color: rgb(141, 47, 47);
   border-radius: 50px 25px;
-  
- 
+
+
 }
 
 span.yellow {
-  font-size:35px;
+  font-size: 35px;
   color: rgb(193, 193, 14);
   background-color: rgb(193, 193, 14);
   border-radius: 50px 25px;
-  
+
 }
 
 span.green {
-  font-size:35px;
+  font-size: 35px;
   color: rgb(21, 88, 21);
   background-color: rgb(21, 88, 21);
-  border-radius:95px 10px 95px 10px;
-  
+  border-radius: 95px 10px 95px 10px;
+
 }
+
 span.khaki {
-  font-size:35px;
-  color:rgb(89, 113, 17);
+  font-size: 35px;
+  color: rgb(89, 113, 17);
   background-color: rgb(89, 113, 17);
   border-radius: 95px 10px 95px 10px;
-  
+
 }
+
 span.white {
-  font-size:35px;
+  font-size: 35px;
   color: rgb(240, 240, 240);
   background-color: rgb(240, 240, 240);
   border-radius: 50px 25px;
-  
+
   border: 1px;
 }
+
 span.black {
-  font-size:35px;
+  font-size: 35px;
   color: black;
   background-color: black;
   border-radius: 50px 25px;
-  
+
 }
+
 span.blue {
-  font-size:35px;
+  font-size: 35px;
   color: rgb(17, 66, 135);
   background-color: rgb(17, 66, 135);
   border-radius: 50px 25px;
-  
+
 }
+
 span.beige {
-  font-size:35px;
+  font-size: 35px;
   color: rgb(253, 229, 185);
   background-color: rgb(253, 229, 185);
   border-radius: 50px 25px;
-  
+
 }
+
 span.gray {
-  font-size:35px;
+  font-size: 35px;
   color: rgb(169, 165, 165);
   background-color: rgb(169, 165, 165);
   border-radius: 95px 10px 95px 10px;
-  
+
 }
-.sitelink a{
-  
+
+.sitelink a {
+
   display: inline-flex;
-  
+
   margin-bottom: 10px;
   font-family: 'Noto Serif JP', serif;
   list-style: none;
   color: rgb(77, 87, 77);
   font-weight: bold;
-  
+
 
 }
+
 .sitelink {
   text-align: center;
   margin-bottom: 20px;
 }
-.blogs{
+
+.blogs {
   display: flex;
 }
-.blog{
-  
-  text-align : center;
-  background : #fff;
-  overflow   : hidden;
+
+.blog {
+
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
   width: 50%;
   height: 150px;
- 
+
 }
-.blog img{
+
+.blog img {
   width: 50%;
-  display     : inline-block;
-  animation   : scrollAnime 20s linear infinite;
- 
+  display: inline-block;
+  animation: scrollAnime 20s linear infinite;
+
 }
-@keyframes scrollAnime{
-    0% { transform: translateY(30%)}
-  100% { transform: translateY(-85%)}
+
+@keyframes scrollAnime {
+  0% {
+    transform: translateY(30%)
+  }
+
+  100% {
+    transform: translateY(-85%)
+  }
 }
 
 
@@ -667,21 +695,37 @@ button:hover {
   background-position: 100% 0;
 }
 
-@media(max-width: 768px) {
+@media(min-width: 365px) {
+  h1 {
+    position: absolute;
+    top: 100px;
+    left: 43%;
+  }
+
   pre {
     font-weight: bolder;
-    font-size: 15px;
-    margin: 30px;
+    font-size: 10px;
+    margin: 10px;
   }
-  .colors{
-    position: absolute;
-    top: 20px;
-    left: 40%;
-    display: initial;
-    text-align: center;
+
+  .introimg {
+    object-fit: cover;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+
+  }
+}
+
+.colors {
+  position: absolute;
+  top: 20px;
+  left: 33%;
+  display: initial;
+  text-align: center;
 
 }
-}
+
 
 @media screen and (min-width:365px) and (min-width: 768px) {
   .Introduction {
@@ -698,13 +742,14 @@ button:hover {
   .aboutme {
     margin-left: 15%;
   }
-  .colors{
+
+  .colors {
     position: absolute;
     top: 20px;
     left: 42%;
     display: initial;
     text-align: center;
-  
+
   }
 
 }
@@ -726,7 +771,8 @@ button:hover {
     margin-left: 100px;
     margin-right: 100px;
   }
-  .mysitetop{
+
+  .mysitetop {
     position: relative;
     display: flex;
     height: 300px;
@@ -739,12 +785,13 @@ button:hover {
   .aboutme img {
     margin-right: 15%;
   }
-  .colors{
+
+  .colors {
     position: absolute;
     top: 20px;
     left: 45%;
     display: initial;
     text-align: center;
-  
+
   }
 }
