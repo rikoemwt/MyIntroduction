@@ -701,6 +701,10 @@ button:hover {
     top: 100px;
     left: 43%;
   }
+  .nav ul li a {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 6vh;
+  }
 
   pre {
     font-weight: bolder;
