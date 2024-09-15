@@ -720,10 +720,12 @@ button:hover {
 
   }
 
+
 .colors {
   position: absolute;
   top: 20px;
   left: 34%;
+  
   display: initial;
   text-align: center;
 }
@@ -785,6 +787,14 @@ span.gray{
 
   .aboutme {
     margin-left: 15%;
+  }
+
+  .introimg {
+    object-fit: cover;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+
   }
 
   .colors {
