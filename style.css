@@ -198,15 +198,21 @@ header {
 }
 
 .nav ul li:nth-child(2) {
-  transition-delay: 150ms;
+  transition-delay: 175ms;
 }
 
 .nav ul li:nth-child(3) {
-  transition-delay: 100ms;
+  transition-delay: 150ms;
 }
 
 .nav ul li:nth-child(4) {
-  transition-delay: 50ms;
+  transition-delay: 125ms;
+}
+.nav ul li:nth-child(5) {
+  transition-delay: 100ms;
+}
+.nav ul li:nth-child(6) {
+  transition-delay: 75ms;
 }
 
 .nav ul li a {
@@ -271,8 +277,17 @@ header {
 .menu-icon:checked~.nav ul li:nth-child(4) {
   transition-delay: 1640ms;
 }
+.menu-icon:checked~.nav ul li:nth-child(5) {
+  transition-delay: 1720ms;
+}
+.menu-icon:checked~.nav ul li:nth-child(6) {
+  transition-delay: 1800ms;
+}
 
-
+.pt-5 .sitelink{
+  color: #946603;
+  font-size: 20px;
+}
 
 .logo {
   position: absolute;
