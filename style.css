@@ -662,13 +662,14 @@ form {
 }
 
 .form-item {
-  margin-top: 30%;
+  margin-top: 45%;
   margin-left: 25%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
   color: rgb(249, 247, 246);
   opacity: 0.7;
 }
+
 
 .form img {
   position: absolute;
@@ -692,8 +693,9 @@ button a{
   
 }
 
-button:hover {
-  background-position: 100% 0;
+button a:hover {
+  background-color: rgb(148, 141, 141);
+
 }
 
 @media(min-width: 365px) {
@@ -806,6 +808,10 @@ span.gray{
     text-align: center;
 
   }
+  .form-item {
+    margin-top: 25%;
+    margin-left: 39%;
+  }
 
 }
 
@@ -853,5 +859,9 @@ span.gray{
     display: initial;
     text-align: center;
 
+  }
+  .form-item {
+    margin-top: 20%;
+    margin-left: 42%;
   }
 }
