@@ -723,7 +723,10 @@ button a:hover {
 
   }
 
-
+  .mycard{
+    width: 300px; 
+    margin-left: 20%;
+  }
 .colors {
   position: absolute;
   top: 20px;
@@ -792,6 +795,11 @@ span.gray{
     margin-left: 15%;
   }
 
+  .mycard{
+    width: 400px; 
+    margin-left: 30%;
+  }
+
   .introimg {
     object-fit: cover;
     overflow: hidden;
@@ -850,6 +858,10 @@ span.gray{
 
   .aboutme img {
     margin-right: 15%;
+  }
+  .mycard{
+    width: 450px; 
+    margin-left: 35%;
   }
 
   .colors {
