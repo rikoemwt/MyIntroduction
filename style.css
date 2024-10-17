@@ -645,7 +645,14 @@ span.gray {
   }
 }
 
+.knowlege ul{
+  display: flex;
+  margin-left: 10%;
+}
+.knowlege img{
+  width: 70%;
 
+}
 
 #Contact {
 
@@ -862,6 +869,7 @@ span.gray{
   .mycard{
     width: 450px; 
     margin-left: 35%;
+    margin-bottom: 10%;
   }
 
   .colors {
