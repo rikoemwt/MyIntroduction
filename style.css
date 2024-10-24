@@ -732,7 +732,7 @@ button a:hover {
 
   .mycard{
     width: 300px; 
-    margin-left: 20%;
+    margin-left:10%;
   }
 .colors {
   position: absolute;
@@ -777,6 +777,10 @@ span.beige{
 span.gray{
   border-radius: 70px 20px;
 
+}
+.form-item {
+  margin-top: 30%;
+  margin-left: 20%;
 }
 }
 
