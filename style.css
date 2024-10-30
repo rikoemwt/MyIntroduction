@@ -445,6 +445,32 @@ main {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+.card{
+  position: relative;
+  width:330px;
+  height: 200px;
+  margin: 0 auto;
+  
+}
+.mycard{
+  position: absolute;
+  top: 0;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+.mycard-b{
+  position: absolute;
+  top: 0;
+  backface-visibility: hidden;
+}
+.card.roll{
+  transform: rotateY(-180deg);
+  transition: transform 2s;
+}
+.card.roll-b{
+  transform: rotateY(0);
+  transition: transform 2s;
+}
 
 .myfavorite {
   display: inline-flex;
@@ -723,7 +749,7 @@ button a:hover {
   pre {
     font-weight: bolder;
     font-size: 10px;
-    margin-left: 20px;
+    margin-left: 20;
   }
 
   .introimg {
@@ -733,8 +759,16 @@ button a:hover {
     height: 180px;
 
   }
+  .card{
+    width: 330px;
+    height: 200px;
+  }
 
   .mycard{
+    width: 300px; 
+    margin-left:10%;
+  }
+  .mycard-b{
     width: 300px; 
     margin-left:10%;
   }
@@ -809,8 +843,15 @@ span.gray{
   .aboutme {
     margin-left: 15%;
   }
-
+  .card{
+    width: 100%;
+    height: 300px;
+  }
   .mycard{
+    width: 400px; 
+    margin-left: 30%;
+  }
+  .mycard-b{
     width: 400px; 
     margin-left: 30%;
   }
@@ -874,7 +915,13 @@ span.gray{
   .aboutme img {
     margin-right: 15%;
   }
+  
   .mycard{
+    width: 450px; 
+    margin-left: 35%;
+    margin-bottom: 10%;
+  }
+  .mycard-b{
     width: 450px; 
     margin-left: 35%;
     margin-bottom: 10%;
