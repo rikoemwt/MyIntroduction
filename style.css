@@ -398,7 +398,7 @@ h1 {
 header img {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   overflow: hidden;
   object-fit: cover;
   opacity: 0.8;
@@ -677,6 +677,36 @@ span.gray {
 }
 .knowlege img{
   width: 70%;
+ 
+
+}
+.front{
+  z-index: 0;
+}
+.level {
+ overflow-y: hidden;
+ 
+ animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+0% {
+  transform: translatey(0);
+}
+25% {
+  transform: translatey(-80%);
+}
+50% {
+  transform: translatex(-100%);
+}
+75% {
+  transform: translatex(50%);
+}
+
+100% {
+  transform: translatey(-100%);
+}
+
 
 }
 
