@@ -15,18 +15,24 @@
 // }
 
 
+// 
 {
-  const Card = document.getElementById('CARD');
-  Card.addEventListener('click',e => {
-     if(Card.classList.contains('roll')==true && Card.classList.contains('roll-b')==true){
-      Card.classList.remove('roll');
-      Card.classList.remove('roll-b');
-    }else if(Card.classList.contains('roll')==true){
-      Card.classList.add('roll-b');
+  function callback(entries,obs){
+    entries.forEach(entry => {
+    if(!entry.isIntersecting){
+      return;
     }
-    else{
-      Card.classList.add('roll');
-    }
+    entry.target.classList.add("appear");
+    obs.unobserve(entry.target);
+    });
+  }
+  const opsion = {
+    threshold:0.2,
+  };
   
+  const observer = new IntersectionObserver(callback,opsion);
+  const targets = document.querySelectorAll(".grid");
+  targets.forEach(target => {
+  observer.observe(target)
   });
 }

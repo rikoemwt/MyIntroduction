@@ -445,32 +445,64 @@ main {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-.card{
+.grid.sl{
+  transform: translateX(-400px);
+}
+.grid.sr{
+  transform: translateX(400px);
+}
+.grid{
+  opacity: 0;
+  transition: opacity .3s,transform .5s;
+}
+.grid.appear{
+  opacity: 1;
+  transform: none;
+}
+
+
+
+.card {
+  width: 100%;
   position: relative;
-  width:330px;
-  height: 200px;
-  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+.card::before {
+  content: "";
+  display: block;
+  padding-top: 310px;
   
 }
-.mycard{
+
+
+.card .mycard,
+.card .mycard-b {
+  transition: all 1s;
   position: absolute;
+  left: 0;
   top: 0;
-  transform: rotateY(-180deg);
+  height: 100%;
+  width: 100%;
   backface-visibility: hidden;
 }
-.mycard-b{
-  position: absolute;
-  top: 0;
-  backface-visibility: hidden;
-}
-.card.roll{
+
+
+.card .mycard-b {
   transform: rotateY(-180deg);
-  transition: transform 2s;
 }
-.card.roll-b{
+
+
+.card:hover .mycard {
+  transform: rotateY(180deg);
+}
+
+
+.card:hover .mycard-b {
   transform: rotateY(0);
-  transition: transform 2s;
 }
+
 
 .myfavorite {
   display: inline-flex;
@@ -487,12 +519,12 @@ pre {
 
 }
 
-#scroll {
+#scroll  {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
 
-  img {
+  img{
     display: inline-block;
     overflow: hidden;
     object-fit: cover;
@@ -654,22 +686,7 @@ span.gray {
 
 }
 
-.blog img {
-  width: 50%;
-  display: inline-block;
-  animation: scrollAnime 20s linear infinite;
 
-}
-
-@keyframes scrollAnime {
-  0% {
-    transform: translateY(30%)
-  }
-
-  100% {
-    transform: translateY(-85%)
-  }
-}
 
 .knowlege ul{
   display: flex;
@@ -686,10 +703,10 @@ span.gray {
 .level {
  overflow-y: hidden;
  
- animation: scroll 15s linear infinite;
+ animation: scrolllevel 15s linear infinite;
 }
 
-@keyframes scroll {
+@keyframes scrolllevel {
 0% {
   transform: translatey(0);
 }
@@ -790,16 +807,18 @@ button a:hover {
 
   }
   .card{
-    width: 330px;
-    height: 200px;
+    width: 100%;
+    height: auto;
   }
 
-  .mycard{
-    width: 300px; 
+  .mycard img {
+    width:320px ; 
+    height: auto;
     margin-left:10%;
   }
-  .mycard-b{
-    width: 300px; 
+  .mycard-b img{
+    width:320px; 
+    height: auto;
     margin-left:10%;
   }
 .colors {
@@ -875,15 +894,17 @@ span.gray{
   }
   .card{
     width: 100%;
-    height: 300px;
+    height: auto;
   }
-  .mycard{
-    width: 400px; 
-    margin-left: 30%;
+  .mycard img{
+    width: 500px; 
+    height: auto;
+    margin-left:20%;
   }
-  .mycard-b{
-    width: 400px; 
-    margin-left: 30%;
+  .mycard-b img{
+    width: 500px;
+    height: auto; 
+    margin-left:20%;
   }
 
   .introimg {
@@ -945,15 +966,26 @@ span.gray{
   .aboutme img {
     margin-right: 15%;
   }
-  
-  .mycard{
-    width: 450px; 
-    margin-left: 35%;
+  .card {
+    width: 100%;
+    height: auto;
+  }
+  .card::before {
+    content: "";
+    display: block;
+    padding-top: 600px;
+    
+  }
+  .mycard img{
+    width: 600px; 
+    height: auto;
+    margin-left:30%;
     margin-bottom: 10%;
   }
-  .mycard-b{
-    width: 450px; 
-    margin-left: 35%;
+  .mycard-b img{
+    width: 600px;
+    height: auto; 
+    margin-left:30%;
     margin-bottom: 10%;
   }
 
