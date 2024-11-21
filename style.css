@@ -425,7 +425,7 @@ main {
 .Introduction video{
   position: relative;
   width: 100%;
-  height: auto;
+  height: 200vh;
   z-index: -1;
  
  
@@ -434,7 +434,7 @@ main {
   position: absolute;
   top: 100vh;
   width: 100%;
-  height: auto;
+  height: 200vh;
   z-index: 1;
 }
 
@@ -443,9 +443,14 @@ main {
 
 }
 
-#Introduction img {
+.Introduction video{
+  width: 100%;
+  height: 160vh;
   object-fit: cover;
-  overflow: hidden;
+}
+.introfront {
+  width: 100%;
+  height: 200vh;
 }
 
 .introimg {
@@ -709,28 +714,25 @@ span.gray {
 }
 .knowlege ul{
   display: flex;
-
+  height: 100%;
   margin-left: 10%;
 }
 .knowlege img{
   
-  height: 100%;
   width: 70%;
-  height: auto;
+  height: 100%;
  
 
 }
-.front{
-  z-index: 0;
-}
+
 .knowlege li{
-height: fit-content;
- animation: scrolllevel 17s linear infinite ;
+height: 100%;
+ animation: scrolllevel 20s linear infinite ;
 }
 
 @keyframes scrolllevel {
 0% {
-  transform: translatey(100%);
+  transform: translatey(90%);
 }
 25% {
   transform: translatey(50%);
@@ -743,7 +745,7 @@ height: fit-content;
 }
 
 100% {
-  transform: translatey(-100%);
+  transform: translatey(-90%);
 }
 
 
@@ -758,27 +760,8 @@ height: fit-content;
   z-index: 1;
 
 }
-
-form {
-  font-weight: bold;
-}
-
-.form-item {
-  position: absolute;
-  margin-top: 45%;
-  margin-left: 25%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  color: rgb(79, 77, 76);
-  opacity: 0.7;
-  z-index: 1;
-}
-
-
-.form video {
-  position: relative;
-  
-  width: 100%;
+.Contact video {
+ width: 100%;
   height: 600px;
   opacity: 0.5;
   object-fit: cover;
@@ -786,21 +769,38 @@ form {
 }
 
 
-
-button a{
+.form-item {
   position: absolute;
-  padding: 20px 50px;
-  color: rgb(104, 98, 98);
-  font-weight: bold;
-  font-size: 20px;
+  top: 330vh;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: rgb(149, 32, 32);
-  background-size: 200% 100%;
+  font-weight: bolder;
+  color: rgb(79, 77, 76);
+  opacity: 1;
   z-index: 1;
 }
 
+
+
+
+ button a{
+  display: block;
+  z-index: 1;
+  padding: 20px 50px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(107, 107, 107);
+  background-size: 200% 100%;
+  
+}
+
 button a:hover {
-  background-color: rgb(148, 141, 141);
+  background-color: rgb(65, 63, 63);
 
 }
 
@@ -847,6 +847,20 @@ button a:hover {
     height: auto;
     margin-left:10%;
   }
+  .Introduction video{
+    width: 100%;
+    height: 160vh;
+    object-fit: cover;
+  }
+  .aboutme pre{
+    color: #444e51;
+    background-color: #ffffffa2;
+  }
+  .introfront{
+    width: 100%;
+    height: 200vh;
+    
+  }
 .colors {
   position: absolute;
   top: 20px;
@@ -890,11 +904,15 @@ span.beige{
 span.gray{
   border-radius: 70px 20px;
 
+
 }
+
 .form-item {
-  margin-top: 50%;
-  margin-left: 15%;
+  position: absolute;
+  top: 370vh;
+  text-align: center;
 }
+
 }
 
 
@@ -918,6 +936,10 @@ span.gray{
   .aboutme {
     margin-left: 15%;
   }
+  .aboutme pre{
+    color: #444e51;
+    background-color: #ffffffa2;
+  }
   .card{
     width: 100%;
     height: auto;
@@ -940,6 +962,16 @@ span.gray{
     height: 300px;
 
   }
+  .Introduction video {
+    width: 100%;
+    height: 200vh;
+    object-fit: cover;
+  }
+
+  .introfront{
+    width: 100%;
+    height: 200vh;
+  }
 
   .colors {
     position: absolute;
@@ -950,11 +982,13 @@ span.gray{
 
   }
   .form-item {
-    margin-top: 25%;
-    margin-left: 39%;
+    position: absolute;
+    top: 430vh;
+    text-align: center;
   }
-
 }
+
+
 
 
 
@@ -992,27 +1026,46 @@ span.gray{
   .aboutme img {
     margin-right: 15%;
   }
+
+  .aboutme pre{
+    color: #444e51;
+    background-color: #ffffff81;
+  }
   .card {
     width: 100%;
     height: auto;
   }
+
   .card::before {
     content: "";
     display: block;
     padding-top: 600px;
-    
   }
+
+
   .mycard img{
     width: 600px; 
     height: auto;
     margin-left:30%;
     margin-bottom: 10%;
   }
+
   .mycard-b img{
     width: 600px;
     height: auto; 
     margin-left:30%;
     margin-bottom: 10%;
+  }
+
+  .Introduction video{
+    width: 100%;
+    height: 250vh;
+    object-fit: cover;
+  }
+
+  .introfront{
+    width: 100%;
+    height: 300vh;
   }
 
   .colors {
@@ -1021,10 +1074,11 @@ span.gray{
     left: 45%;
     display: initial;
     text-align: center;
-
   }
+
   .form-item {
-    margin-top: 20%;
-    margin-left: 42%;
+    position: absolute;
+    top: 500vh;
+    text-align: center;
   }
 }
