@@ -37,3 +37,59 @@
   });
 }
 
+{
+ const level1 = document.querySelector("#level1");
+
+ const keyframes = {
+  opacity: [0, 1],
+  translate: ["0 100px", 0],
+};
+const options = {
+  duration: 5000,
+  easing: "ease",
+};
+
+level1.animate(keyframes, options);
+}
+{
+ const level2 = document.querySelector("#level2");
+
+ const keyframes = {
+  opacity: [0, 1],
+  translate: ["0 200px", 0],
+};
+const options = {
+  duration: 5000,
+  easing: "ease",
+};
+
+level2.animate(keyframes, options);
+}
+{
+ const level3 = document.querySelector("#level3");
+
+ const keyframes = {
+  opacity: [0, 1],
+  translate: ["0 300px", 0],
+};
+const options = {
+  duration: 5000,
+  easing: "ease",
+};
+
+level3.animate(keyframes, options);
+}
+{
+ const level4 = document.querySelector("#level4");
+
+ const keyframes = {
+  opacity: [0, 1],
+  translate: ["0 400px", 0],
+};
+const options = {
+  duration: 5000,
+  easing: "ease",
+};
+
+level4.animate(keyframes, options);
+}
