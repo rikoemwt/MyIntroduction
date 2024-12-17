@@ -533,9 +533,10 @@ main {
   margin-bottom: 60px;
 }
 
-pre {
+.pre {
   font-family: 'Noto Serif JP', serif;
   font-size: 18px;
+  text-align: center;
   width: 50%;
   margin: 0px;
 
@@ -575,7 +576,7 @@ pre {
   width: 100%;
 }
 
-#MySite pre {
+#MySite .pre {
   text-align: center;
 }
 
@@ -795,7 +796,7 @@ button a:hover {
     font-size: 4vh;
   }
 
-  pre {
+  .pre {
     font-weight: bolder;
     font-size: 10px;
     margin-left: 20;
@@ -828,7 +829,7 @@ button a:hover {
     height: 160vh;
     object-fit: cover;
   }
-  .aboutme pre{
+  .aboutme .pre{
     color: #444e51;
     background-color: #ffffffa2;
   }
@@ -904,7 +905,7 @@ form{
     width: 100%;
   }
 
-  pre {
+  .pre {
     font-size: 18px;
     font-weight: bolder;
     margin-left: 50px;
@@ -914,7 +915,7 @@ form{
   .aboutme {
     margin-left: 15%;
   }
-  .aboutme pre{
+  .aboutme .pre{
     color: #444e51;
     background-color: #ffffffa2;
   }
@@ -979,7 +980,7 @@ form{
     margin-left: 17%;
   }
 
-  pre {
+  .pre {
     font-size: 15px;
     font-weight: bolder;
     margin-left: 10px;
@@ -1118,7 +1119,7 @@ form{
     width: 100%;
   }
 
-  pre {
+  .pre {
     font-size: 25px;
     font-weight: bolder;
     margin-left: 100px;
@@ -1139,7 +1140,7 @@ form{
     margin-right: 15%;
   }
 
-  .aboutme pre{
+  .aboutme .pre{
     color: #444e51;
     background-color: #ffffff81;
   }
@@ -1257,7 +1258,7 @@ form{
     object-fit: cover;
   }
 
-  pre {
+  .pre {
     font-size: 25px;
     font-weight: bolder;
     margin-left: 250px;
