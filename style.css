@@ -1133,11 +1133,11 @@ form{
   }
 
   .aboutme {
-    margin-left: 18%;
+    margin-left: 5%;
   }
 
   .aboutme img {
-    margin-right: 15%;
+    margin-right: 5%;
   }
 
   .aboutme .pre{
@@ -1159,14 +1159,14 @@ form{
   .mycard img{
     width: 600px; 
     height: auto;
-    margin-left:30%;
+    margin-left:25%;
     margin-bottom: 10%;
   }
 
   .mycard-b img{
     width: 600px;
     height: auto; 
-    margin-left:30%;
+    margin-left:25%;
     margin-bottom: 10%;
   }
 
